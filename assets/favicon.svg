@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="PV monogram">
+  <rect width="64" height="64" fill="#000000"/>
+  <g fill="none" stroke="#aaff00" stroke-width="2">
+    <path d="M6 14h6M6 14v6M58 14h-6M58 14v6M6 50h6M6 50v-6M58 50h-6M58 50v-6"/>
+  </g>
+  <text x="32" y="41" text-anchor="middle" font-family="Orbitron, Arial Black, sans-serif" font-weight="900" font-size="22" letter-spacing="1" fill="#ffffff">PV</text>
+  <rect x="20" y="46" width="24" height="2" fill="#ff2d3d"/>
+</svg>
