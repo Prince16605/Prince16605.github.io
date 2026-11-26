@@ -488,12 +488,9 @@
     blade.addEventListener('animationend', finish, { once: true });
     setTimeout(finish, 1500);
   }
-  if (heroName) {
-    heroName.addEventListener('click', slice);
-    heroName.addEventListener('keydown', function (e) {
-      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); slice(); }
-    });
-  }
+  if (heroName) heroName.addEventListener('click', slice);
+  var sliceBtn = $('#sliceBtn');
+  if (sliceBtn) sliceBtn.addEventListener('click', slice);
 
   /* ---------- 08 REVEAL ---------- */
   var revealEls = $$('.sec-head, .proj, .skill-card, .tl-item, .cred, .tc-item, .stat, .scanner, .about-copy > p, .hero-intro, .role-pills, .contact-head, .contact-rows li, .term, .mf-arrow, .proj-more, .marquee');

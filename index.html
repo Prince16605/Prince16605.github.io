@@ -163,7 +163,7 @@
   </div>
 </div>
 
-<main id="main">
+<main id="main" tabindex="-1">
 
 <!-- ============ HERO ============ -->
 <section class="hero" id="home">
@@ -180,7 +180,7 @@
         <li>AWS Infrastructure</li>
       </ul>
 
-      <h1 class="hero-name" id="heroName" tabindex="0" role="button" aria-label="Prince Vaghasiya — trigger signature animation">
+      <h1 class="hero-name" id="heroName">
         <span class="visually-hidden">Prince Vaghasiya</span>
         <span class="hn-visual" aria-hidden="true">
           <span class="hn-line">
@@ -194,7 +194,7 @@
           <span class="hn-seam"></span>
         </span>
       </h1>
-      <p class="hero-hint">click the name <span aria-hidden="true">↗</span></p>
+      <button class="hero-hint" id="sliceBtn" type="button">click the name <span aria-hidden="true">↗</span></button>
 
       <div class="hero-meta">
         <span>FROM IN</span>
@@ -266,7 +266,7 @@
 <section class="about section" id="about">
   <div class="wrap">
     <div class="sec-head">
-      <span class="sec-num">01</span>
+      <span class="sec-num" aria-hidden="true">01</span>
       <div>
         <h2 class="sec-title">ABOUT</h2>
         <p class="sec-sub">// operator profile</p>
@@ -316,7 +316,7 @@
 <section class="experience section" id="experience">
   <div class="wrap">
     <div class="sec-head">
-      <span class="sec-num">02</span>
+      <span class="sec-num" aria-hidden="true">02</span>
       <div>
         <h2 class="sec-title">EXPERIENCE</h2>
         <p class="sec-sub">// mission log, newest first</p>
@@ -432,7 +432,7 @@
 <section class="skills section lime-zone" id="skills">
   <div class="wrap">
     <div class="sec-head">
-      <span class="sec-num">03</span>
+      <span class="sec-num" aria-hidden="true">03</span>
       <div>
         <h2 class="sec-title">SKILLS</h2>
         <p class="sec-sub">// capability matrix</p>
@@ -484,7 +484,7 @@
     </div>
   </div>
 
-  <div class="marquee" aria-label="Tools and technologies">
+  <div class="marquee" role="group" aria-label="Tools and technologies">
     <div class="marquee-track" id="marqueeTrack">
       <span>AWS</span><span>EC2</span><span>VPC</span><span>S3</span><span>IAM</span><span>RDS</span><span>Route 53</span><span>CloudWatch</span><span>SNS</span><span>Auto Scaling</span><span>Lambda</span><span>Linux</span><span>Amazon Linux</span><span>Bash</span><span>Docker</span><span>Jenkins</span><span>Terraform</span><span>Ansible</span><span>Git</span><span>GitHub</span><span>MySQL</span><span>DynamoDB</span><span>AWS CLI</span><span>Nginx</span><span>Apache</span><span>PHP</span><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Shopify</span>
     </div>
@@ -495,7 +495,7 @@
 <section class="projects section" id="projects">
   <div class="wrap">
     <div class="sec-head">
-      <span class="sec-num">04</span>
+      <span class="sec-num" aria-hidden="true">04</span>
       <div>
         <h2 class="sec-title">PROJECTS</h2>
         <p class="sec-sub">// field deployments</p>
@@ -856,7 +856,7 @@ heal.timer  →  nginx-health.service</pre>
 <section class="terminal-section section" id="terminal">
   <div class="wrap">
     <div class="sec-head">
-      <span class="sec-num">05</span>
+      <span class="sec-num" aria-hidden="true">05</span>
       <div>
         <h2 class="sec-title">TERMINAL</h2>
         <p class="sec-sub">// interactive shell — try <code>help</code></p>
@@ -877,7 +877,7 @@ heal.timer  →  nginx-health.service</pre>
       <form class="term-input-row" id="termForm" autocomplete="off">
         <label class="term-prompt" for="termInput">prince@portfolio:~$</label>
         <input id="termInput" name="cmd" type="text" spellcheck="false" autocapitalize="off" autocorrect="off" aria-label="Terminal command input" placeholder="help" />
-        <button type="submit" class="visually-hidden">Run command</button>
+        <button type="submit" class="visually-hidden" tabindex="-1" aria-hidden="true">Run command</button>
       </form>
 
       <div class="term-btns">
@@ -898,7 +898,7 @@ heal.timer  →  nginx-health.service</pre>
 <section class="contact section lime-zone" id="contact">
   <div class="wrap">
     <div class="sec-head">
-      <span class="sec-num">06</span>
+      <span class="sec-num" aria-hidden="true">06</span>
       <div>
         <h2 class="sec-title">CONTACT</h2>
         <p class="sec-sub">// open a channel</p>
