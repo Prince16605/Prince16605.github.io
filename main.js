@@ -244,11 +244,11 @@
   var BOOT_LINES = [
     'PV-OS 1.0.0  (c) 2026 P.VAGHASIYA',
     '> initialising kernel ........... ok',
-    '> neural kernel ................. loaded',
-    '> agent mesh [3 nodes] .......... online',
-    '> vector index .................. 1.2M chunks',
-    '> honeypot grid ................. armed',
-    '> intrusion detection ........... active',
+    '> mounting volumes .............. ok',
+    '> vpc 10.0.0.0/16 ............... reachable',
+    '> auto scaling group ............ healthy',
+    '> jenkins agent ................. connected',
+    '> cloudwatch alarms ............. armed',
     '> operator: PRINCE VAGHASIYA .... verified',
     '> ACCESS GRANTED'
   ];
@@ -742,15 +742,15 @@
   };
 
   commands.whoami = function () {
-    print('PRINCE VAGHASIYA — AI systems &amp; security engineer');
-    print('<span class="dim">Pune, India · IST UTC+05:30 · 18.5204°N 73.8567°E</span>');
+    print('PRINCE VAGHASIYA — cloud &amp; devops engineer');
+    print('<span class="dim">Pune, Maharashtra · IST UTC+05:30 · 18.5204°N 73.8567°E</span>');
   };
 
   commands.about = function () {
-    print('I build AI systems that survive production: multi-agent orchestration,');
-    print('local model inference and retrieval pipelines — usually under security');
-    print('constraints. I started on the offensive side, which is why every');
-    print('service I write assumes hostile input.');
+    print('I provision and run AWS infrastructure: VPC design, EC2, RDS, S3,');
+    print('IAM, load balancing and Auto Scaling. Linux is home — shell,');
+    print('services, logs — and I automate the rest with Docker, Ansible,');
+    print('Terraform and Jenkins pipelines.');
     print('<span class="dim">→ type <b>experience</b> or <b>projects</b></span>');
   };
 
@@ -760,7 +760,7 @@
     xs.forEach(function (x) {
       print('<span class="key">' + esc(x.date.trim()) + '</span>  ' + esc(x.co.trim()) + ' — <b>' + esc(x.role.trim()) + '</b>');
     });
-    print('<span class="dim">→ 2 earlier internships, see the Experience section</span>');
+    print('<span class="dim">→ full detail in the Experience section</span>');
   };
 
   commands.projects = function () {
@@ -816,8 +816,10 @@
     var rows = [
       ['user', 'prince@portfolio'],
       ['os', 'PV-OS 1.0.0'],
-      ['host', 'Pune, India'],
-      ['shell', 'main.js (vanilla)'],
+      ['host', 'Pune, Maharashtra'],
+      ['role', 'cloud & devops engineer'],
+      ['cloud', 'AWS · EC2 · VPC · RDS'],
+      ['stack', 'Docker · Jenkins · Terraform'],
       ['js', '38kb · 0 dependencies'],
       ['a11y', 'keyboard complete'],
       ['audio', 'synthesised, 0 files'],

@@ -796,11 +796,12 @@ body.cursor-hot .cursor-dot{background:var(--red)}
 .tc-co{font-family:var(--f-mono);font-size:.58rem;letter-spacing:.18em;color:var(--gray-2)}
 .tc-note{flex:1 1 260px;font-size:.8rem;color:var(--gray)}
 
-.cred-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:1rem;margin-top:clamp(1.8rem,3.4vw,2.6rem)}
-.cred{position:relative;background-color:var(--dark);border:1px solid var(--line);padding:1.3rem 1.4rem}
+.cred-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(272px,1fr));gap:1rem;margin-top:clamp(1.8rem,3.4vw,2.6rem)}
+.cred{position:relative;display:flex;flex-direction:column;background-color:var(--dark);border:1px solid var(--line);padding:1.3rem 1.4rem}
 .cred-lbl{font-family:var(--f-mono);font-size:.55rem;letter-spacing:.22em;color:var(--gray-2)}
 .cred h3{font-size:.92rem;letter-spacing:.04em;margin:.55rem 0 .35rem;line-height:1.35}
 .cred p{font-size:.78rem;color:var(--gray);margin-bottom:1rem}
+.cred .meter{margin-top:auto}
 .meter{height:3px;background:#1c1c1c;overflow:hidden}
 .meter i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--green),var(--lime));transition:width 1.1s var(--ease)}
 .meter.in i{width:var(--v)}
@@ -868,7 +869,7 @@ body.cursor-hot .cursor-dot{background:var(--red)}
 
 /* ---------- 14 PROJECTS ---------- */
 .proj-grid{
-  display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));
+  display:grid;grid-template-columns:repeat(2,minmax(0,1fr));
   gap:1.1rem;
 }
 .proj{
@@ -954,14 +955,14 @@ body.cursor-hot .cursor-dot{background:var(--red)}
 .proj-foot a{color:var(--white);border-bottom:1px solid transparent;transition:color .25s,border-color .25s}
 .proj-foot a:hover{color:var(--lime);border-color:var(--lime)}
 .proj-archive{grid-column:span 2;justify-content:flex-start}
-.arch-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:.35rem 1.6rem;margin-top:.9rem}
+.arch-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.2rem 2.6rem;margin-top:.9rem}
 .arch-list li{
-  display:flex;justify-content:space-between;gap:.8rem;align-items:baseline;
-  font-size:.82rem;padding:.5rem 0;border-bottom:1px dashed #1b1b1b;
+  display:grid;gap:.2rem;min-width:0;
+  font-size:.82rem;padding:.55rem 0;border-bottom:1px dashed #1b1b1b;
 }
-.arch-list a{font-family:var(--f-mono);font-size:.74rem;color:var(--white);transition:color .25s}
+.arch-list a{font-family:var(--f-mono);font-size:.76rem;color:var(--white);transition:color .25s;overflow-wrap:anywhere}
 .arch-list a:hover{color:var(--lime)}
-.arch-list span{font-size:.7rem;color:var(--gray-2);text-align:right}
+.arch-list span{font-size:.7rem;color:var(--gray-2);line-height:1.45}
 .proj-more{margin-top:clamp(1.8rem,3.4vw,2.6rem);text-align:center}
 
 /* ---------- 15 TERMINAL ---------- */
@@ -1111,8 +1112,8 @@ body.cursor-hot .cursor-dot{background:var(--red)}
   .about-grid{grid-template-columns:1fr}
   .about-visual{max-width:400px}
   .nav-center .nav-loc{display:none}
-  .proj-wide,.proj-archive{grid-column:span 1}
-  .proj-wide .proj-media{aspect-ratio:16/9}
+  .proj-archive{grid-column:span 1}
+  .proj-wide .proj-media{aspect-ratio:2/1}
   .rail{display:none}
   .hero-name{font-size:clamp(2.6rem,11vw,5.4rem)}
 }
@@ -1124,7 +1125,10 @@ body.cursor-hot .cursor-dot{background:var(--red)}
   .tl-item::before{display:none}
   .tl-compact{margin-left:0}
   .menu-list a{font-size:clamp(1.7rem,8vw,3rem)}
-  .proj-grid{grid-template-columns:1fr}
+  .proj-grid{grid-template-columns:minmax(0,1fr)}
+  .proj-wide,.proj-archive{grid-column:span 1}
+  .proj-wide .proj-media{aspect-ratio:16/9}
+  .arch-list{grid-template-columns:minmax(0,1fr)}
   .skill-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
   .dotmark{font-size:clamp(1.5rem,9vw,3.4rem)}
 }
@@ -1154,9 +1158,9 @@ body.cursor-hot .cursor-dot{background:var(--red)}
   .cr-lbl{width:100%}
   .contact-rows a,.contact-rows span:not(.cr-lbl){font-size:.86rem;word-break:break-word}
   .footer{font-size:.5rem;letter-spacing:.1em}
-  .arch text{font-size:22px}
-  .arch .arch-t{font-size:22px}
-  .arch .arch-s{font-size:17px}
+  .arch text{font-size:18px}
+  .arch .arch-t{font-size:18px}
+  .arch .arch-s{font-size:14px}
   .tm-body{font-size:.46rem}
   .marquee-track{font-size:.68rem;gap:1.6rem}
   .menu-foot{font-size:.58rem;gap:.8rem}
