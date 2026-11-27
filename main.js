@@ -994,7 +994,10 @@
     e.preventDefault();
     closeMenu();
     el.scrollIntoView({ behavior: reduced() ? 'auto' : 'smooth', block: 'start' });
-    history.replaceState(null, '', id);
+    window.history.replaceState(null, '', id);
+    // move focus to the target so skip links and nav links actually land there
+    if (!el.hasAttribute('tabindex')) el.setAttribute('tabindex', '-1');
+    try { el.focus({ preventScroll: true }); } catch (err) { el.focus(); }
   });
 
   // re-evaluate reduced-motion preference at runtime

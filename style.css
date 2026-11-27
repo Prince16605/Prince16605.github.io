@@ -1237,3 +1237,4 @@ body.cursor-hot .cursor-dot{background:var(--red)}
   .nav-menu-btn{min-height:44px}
   .term-btns{gap:.5rem}
 }
+main[tabindex="-1"]:focus,section[tabindex="-1"]:focus{outline:none}
